@@ -1,0 +1,137 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.center-container {
+  margin: 0 auto;
+  width: 50%; /* or any width you prefer */
+}
+
+.input-box-todo {
+  display: flexbox;
+}
+
+/* Chat GPT CSS */
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f9f9f9;
+}
+
+li span {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkbox:hover {
+  background-color: #e6f0ff;
+  border-color: #0056b3;
+}
+
+.checkbox:active {
+  background-color: #cce0ff;
+}
+
+.checkbox svg {
+  width: 20px;
+  height: 20px;
+  fill: #007bff;
+  transition: fill 0.3s ease;
+}
+
+.checkbox:hover svg {
+  fill: #0056b3;
+}
+
+.checkbox:active svg {
+  fill: #003a75;
+}
+
+li .task {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+li .task.completed {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+li .delete-icon {
+  cursor: pointer;
+  color: #d9534f;
+  transition: color 0.3s ease;
+}
+
+li .delete-icon:hover {
+  color: #c9302c;
+}
+
+li .delete-icon:active {
+  color: #ac2925;
+}
+
+
+
+/* Styling for input container */
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-box-todo {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-box-todo:focus {
+  border-color: #007BFF;
+}
+
+.add-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+}
